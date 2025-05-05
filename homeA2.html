@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="A2.css">
+    <script src="homeA2.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="audioA2.js" defer></script>
+</head>
+<body>
+    <h1>INST377 - Activities</h1>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="homeA2.html">Home</a></li>
+            <li><a href="stocksA2.html">Stocks</a></li>
+            <li><a href="dogsA2.html">Dogs</a></li>
+        </ul>
+    </nav>
+    <h1>These are some different activities we can try!</h1>
+    <div class="button-container">
+        <button class="button-64" role="button"><span class="text" onclick="location.href='stocksA2.html'">Stocks</span></button>
+        <button class="button-64" role="button"><span class="text" onclick="location.href='dogsA2.html'">Dogs</span></button>
+    </div>
+    <div class="quote-container">
+        <h3>Quote of the Page Load</h3>
+        <br>
+        <div id="quote"></div>
+    </div>
+
+    <div class="audio">
+        <h1>In this web page there are options to Navigate using Audio!</h1>
+        <p>Ensure your Mic is enabled to be able to use this feature</p>
+        <ul>
+            <li>Navigate to a Different Page</li>
+            <ul>
+                <li>Say: <strong>Navigate to &ltpage&gt</strong></li>
+            </ul>
+            <li>Change the Page Color</li>
+            <ul>
+                <li>Say: <strong>Change the color to &ltcolor&gt</strong></li>
+            </ul>
+            <li>Say Hello Back to you!</li>
+            <ul>
+                <li>Say: <strong>Hello</strong></li>
+            </ul>
+        </ul>
+        <div class="button-container">
+            <button class="button-17" role="button" onclick="startAudio()">Turn on Listening</button>
+            <button class="button-17" role="button" onclick="stopAudio()">Turn off Listening</button>
+        </div>
+    </div>
+</body>
+</html>

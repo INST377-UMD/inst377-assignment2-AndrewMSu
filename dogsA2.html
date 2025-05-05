@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="A2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    <script src="dogsA2.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="audioA2.js" defer></script>
+</head>
+<body>
+    <h1>INST377 - Activities</h1>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="homeA2.html">Home</a></li>
+            <li><a href="stocksA2.html">Stocks</a></li>
+            <li><a href="dogsA2.html">Dogs</a></li>
+        </ul>
+    </nav>
+    <h1>Doggos!</h1>
+    <div class="dog-image-container">
+        <div id="dogImage" data-simple-slider></div>
+    </div>
+
+    <div id="dogButton"></div>
+
+    <div class="audio">
+        <h1>In this web page there are options to Navigate using Audio!</h1>
+        <p>Ensure your Mic is enabled to be able to use this feature</p>
+        <ul>
+            <li>Navigate to a Different Page</li>
+            <ul>
+                <li>Say: <strong>Navigate to &ltpage&gt</strong></li>
+            </ul>
+            <li>Change the Page Color</li>
+            <ul>
+                <li>Say: <strong>Change the color to &ltcolor&gt</strong></li>
+            </ul>
+            <li>Say Hello Back to you!</li>
+            <ul>
+                <li>Say: <strong>Hello</strong></li>
+            </ul>
+            <li>Load Dog Breed</li>
+            <ul>
+                <li>Say: <strong>Load Dog Breed &ltDog Breed Name&gt</strong></li>
+            </ul>
+        </ul>
+        <div class="button-container">
+            <button class="button-17" role="button" onclick="startAudio()">Turn on Listening</button>
+            <button class="button-17" role="button" onclick="stopAudio()">Turn off Listening</button>
+        </div>
+    </div>
+</body>
+</html>
